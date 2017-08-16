@@ -1,0 +1,37 @@
+Project name qualifier for the heading of code commit messages:
+--data-set-access-verification: --
+
+Heading that can be used to define which version of the database was used in a given code commit message:
+(this version uses version 0.1 of the database)
+
+Heading that can be used to define which version of the database was defined and used in a given code commit message:
+(this version defines and uses version 0.1 of the database)
+
+Heading for a given database version's upgrade SQL statements
+--------------------------------------------------------
+--version 0.2 updates:
+--------------------------------------------------------
+
+Heading for the combined DDL/DML files:
+--------------------------------------------------------
+--Combined DDL/DML file:
+--------------------------------------------------------
+
+
+Template for database project information for inclusion in the top of every SQL DDL/DML file:
+--------------------------------------------------------
+--------------------------------------------------------
+--Database Name: 
+--Database Description: 
+--------------------------------------------------------
+--------------------------------------------------------
+
+Heading for the combined DDL/DML file:
+--------------------------------------------------------
+--Combined DDL/DML file:
+--------------------------------------------------------
+
+
+
+--define the upgrade version in the database upgrade log table:
+INSERT INTO DB_UPGRADE_LOGS (UPGRADE_APP_NAME, UPGRADE_VERSION, UPGRADE_DATE, UPGRADE_DESC) VALUES ('', '0.1', TO_DATE('', 'DD-MON-YY'), '');

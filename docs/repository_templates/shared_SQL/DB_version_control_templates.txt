@@ -35,14 +35,14 @@
 
 **Heading for the combined DDL/DML file:**
 --------------------------------------------------------
---Combined DDL/DML file:
+--[DATABASE NAME] - Combined DDL/DML file:
 --------------------------------------------------------
 
 
 **Heading for a given database version's upgrade SQL statements**
 **[MAJOR].[MINOR] is the major/minor version of the database where [MAJOR] is the major version of the database and [MINOR] is the minor version of the database, both the major and minor version values are integers starting from zero that are incremented by one without a leading zero.  The exception to the rule is that the first version of a database should be 0.1.  Otherwise when each major version is incremented the minor version should be reset to 0 for that major version (e.g. version 3.0).**
 --------------------------------------------------------
---version [MAJOR].[MINOR] updates:
+--[DATABASE NAME] - version [MAJOR].[MINOR] updates:
 --------------------------------------------------------
 
 

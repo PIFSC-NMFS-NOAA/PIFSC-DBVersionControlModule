@@ -7,7 +7,7 @@
 
 
 -------------------------------------------------------------------
---version 0.1 updates:
+--Database Version Control - version 0.1 updates:
 -------------------------------------------------------------------
 
 CREATE TABLE DB_UPGRADE_LOGS 

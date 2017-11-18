@@ -6,12 +6,12 @@
 --------------------------------------------------------
 
 --------------------------------------------------------
---Combined DDL/DML file:
+--Database Version Control - Combined DDL/DML file:
 --------------------------------------------------------
 
 
 -------------------------------------------------------------------
---version 0.1 updates:
+--Database Version Control - version 0.1 updates:
 -------------------------------------------------------------------
 
 CREATE TABLE DB_UPGRADE_LOGS 
@@ -103,3 +103,22 @@ This view returns the log of all database upgrades applied to a given database o
 
 --define the upgrade version in the database:
 INSERT INTO DB_UPGRADE_LOGS (UPGRADE_APP_NAME, UPGRADE_VERSION, UPGRADE_DATE, UPGRADE_DESC) VALUES ('Database Version Control', '0.1', TO_DATE('10-AUG-17', 'DD-MON-YY'), 'Initial version of the database upgrade log table and support objects');
+
+
+-------------------------------------------------------------------
+--Database Version Control - version 0.2 updates:
+-------------------------------------------------------------------
+
+
+ALTER TABLE DB_UPGRADE_LOGS
+ADD CONSTRAINT DB_UPGRADE_LOGS_U1 UNIQUE 
+(
+  UPGRADE_APP_NAME 
+, UPGRADE_VERSION 
+)
+ENABLE;
+
+
+
+--define the upgrade version in the database:
+INSERT INTO DB_UPGRADE_LOGS (UPGRADE_APP_NAME, UPGRADE_VERSION, UPGRADE_DATE, UPGRADE_DESC) VALUES ('Database Version Control', '0.2', TO_DATE('17-NOV-17', 'DD-MON-YY'), 'Implemented a unique key constraint that requires the application name and version to be unique so that the same update cannot be entered into the database upgrade log table');

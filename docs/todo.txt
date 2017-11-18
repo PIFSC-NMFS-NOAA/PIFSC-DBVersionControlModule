@@ -1,0 +1,3 @@
+X define unique key constraints on the app_name and version fields so that a given update isn't logged twice and will alert the user if this is attempted
+
+_ implement an undo log so that a given database module can be uninstalled safely (drop all objects that are a part of the combined DDL/DML file)

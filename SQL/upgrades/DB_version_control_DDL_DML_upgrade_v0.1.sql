@@ -99,3 +99,6 @@ This view returns the log of all database upgrades applied to a given database o
 
 --define the upgrade version in the database:
 INSERT INTO DB_UPGRADE_LOGS (UPGRADE_APP_NAME, UPGRADE_VERSION, UPGRADE_DATE, UPGRADE_DESC) VALUES ('Database Version Control', '0.1', TO_DATE('10-AUG-17', 'DD-MON-YY'), 'Initial version of the database upgrade log table and support objects');
+
+--commit the DB_UPGRADE_LOGS record insertion
+COMMIT;

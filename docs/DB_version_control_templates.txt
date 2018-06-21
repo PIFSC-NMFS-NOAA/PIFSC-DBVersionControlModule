@@ -23,15 +23,15 @@
 **Standard commit message content for upgrading a database module**
 **[MAJOR].[MINOR] is the major/minor version of the database where [MAJOR] is the major version of the database and [MINOR] is the minor version of the database**
 **[DATABASE NAME] is the name of the given database module**
-**Example: Defined version 0.3 of the Data Validation Module Database**
-Defined version [MAJOR].[MINOR] of the [DATABASE NAME] Database
+**Example: Version 0.3 of the Data Validation Module Database**
+Version [MAJOR].[MINOR] of the [DATABASE NAME] Database
 
 
 **Standard commit message content for installing/upgrading an external database module:**
 **[MAJOR].[MINOR] is the major/minor version of the database where [MAJOR] is the major version of the database and [MINOR] is the minor version of the database**
 **[DATABASE NAME] is the name of the given external database module**
 **[GIT URL] is the git URL for the external database module**
-**Example: Installed version 0.2 of the DB Version Control Module database (Git URL: git@pichub.pifsc.gov:application-development/centralized-tools.git in the DB_version_control folder)**
+**Example: Installed Version 0.2 of the DB Version Control Module database (Git URL: git@pichub.pifsc.gov:application-development/centralized-tools.git in the DB_version_control folder)**
 Installed Version [MAJOR].[MINOR] of the [DATABASE NAME] Database (Git URL: [GIT URL])
 
 
@@ -49,8 +49,8 @@ Installed Version [MAJOR].[MINOR] of the [DATABASE NAME] Database (Git URL: [GIT
 	**[MAJOR].[MINOR] is the major/minor version of the database where [MAJOR] is the major version of the database and [MINOR] is the minor version of the database**
 	**[DATABASE NAME] is the name of the database module**
 	**[GIT URL] is the git URL for the database module**
-	**Example: Defined Version 0.3 of the Data Validation Module Database**
-	Defined Version [MAJOR].[MINOR] of the [DATABASE NAME] Database
+	**Example: Version 0.3 of the Data Validation Module Database**
+	Version [MAJOR].[MINOR] of the [DATABASE NAME] Database
 	
 	
 	**git tag name for installing/upgrading an external database module:**
@@ -63,7 +63,7 @@ Installed Version [MAJOR].[MINOR] of the [DATABASE NAME] Database (Git URL: [GIT
 	**[MAJOR].[MINOR] is the major/minor version of the database where [MAJOR] is the major version of the database and [MINOR] is the minor version of the database**
 	**[DATABASE NAME] is the name of the given external database module**
 	**[GIT URL] is the git URL for the external database module**
-	**Example: Installed version 0.2 of the DB Version Control Module Database (Git URL: git@pichub.pifsc.gov:application-development/centralized-tools.git in the DB_version_control folder)**
+	**Example: Installed Version 0.2 of the DB Version Control Module Database (Git URL: git@pichub.pifsc.gov:application-development/centralized-tools.git in the DB_version_control folder)**
 	Installed Version [MAJOR].[MINOR] of the [DATABASE NAME] Database (Git URL: [GIT URL])
 
 

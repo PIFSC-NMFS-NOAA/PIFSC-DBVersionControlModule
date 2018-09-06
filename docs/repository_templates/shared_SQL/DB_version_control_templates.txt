@@ -109,8 +109,8 @@ COMMIT;
 
 **When installing a new external database module**
 **Indent the database module code so it is clear that it is part of the database module installation**
---Installing version [MAJOR].[MINOR] of [DATABASE NAME]--
+--Installing version [MAJOR].[MINOR] of [DATABASE NAME] (Version Control URL: [GIT_URL])--
 
 **When upgrading an existing external database module**
 **Indent the database module code so it is clear that it is part of the database module installation**
---Upgrading from version [MAJOR].[MINOR] to [MAJOR].[MINOR] of [DATABASE NAME]--
+--Upgrading from version [MAJOR].[MINOR] to [MAJOR].[MINOR] of [DATABASE NAME] (Version Control URL: [GIT_URL])--

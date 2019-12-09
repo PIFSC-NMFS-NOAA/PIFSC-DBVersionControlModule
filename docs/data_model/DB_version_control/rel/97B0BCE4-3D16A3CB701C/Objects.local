@@ -1,0 +1,5 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="SchemaObject" objectID="D8FEF541-E6C2-96B9-819E-486D0F99D68E" name="PICDM" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.SchemaObject" propertyParentId="97B0BCE4-11B5-6343-A4EC-3D16A3CB701C" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="9CE3D281-160A-0371-D536-525B9DCAE9D7" name="DB_UPGRADE_LOGS" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="97B0BCE4-11B5-6343-A4EC-3D16A3CB701C" propertySourceId="" propertyTargetId=""/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

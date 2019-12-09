@@ -1,0 +1,4 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="main_view" objectID="52905D4E-1F2D-561D-EBBD-C24EAAC538F3" name="PIC_PICDM" visible="true"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

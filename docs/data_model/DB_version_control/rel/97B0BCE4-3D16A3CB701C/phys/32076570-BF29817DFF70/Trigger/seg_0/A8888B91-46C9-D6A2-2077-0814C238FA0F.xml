@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="DB_UPGRADE_LOGS_AUTO_BRI" directorySegmentName="seg_0" id="A8888B91-46C9-D6A2-2077-0814C238FA0F">
+<sourceConnName>PIC_PICDM</sourceConnName>
+<sourceObjSchema>PICDM</sourceObjSchema>
+<sourceObjName>DB_UPGRADE_LOGS_AUTO_BRI</sourceObjName>
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2019-12-09 17:33:53 UTC</createdTime>
+<ownerDesignName>DB_version_control</ownerDesignName>
+<actions>INSERT</actions>
+<body>begin&lt;br/&gt;  select DB_UPGRADE_LOGS_SEQ.nextval into :new.UPGRADE_LOG_ID from dual;&lt;br/&gt;  :NEW.UPGRADE_APP_DATE := SYSDATE;&lt;br/&gt;  :NEW.UPGRADE_BY := nvl(v(&apos;APP_USER&apos;),user);&lt;br/&gt;end;&lt;br/&gt;</body>
+<triggerTime>BEFORE</triggerTime>
+<owner>81C90BD8-C888-9A30-5DD3-4A1C2FE3A6E8</owner>
+<table>9CE3D281-160A-0371-D536-525B9DCAE9D7</table>
+</TriggerOraclev10g>

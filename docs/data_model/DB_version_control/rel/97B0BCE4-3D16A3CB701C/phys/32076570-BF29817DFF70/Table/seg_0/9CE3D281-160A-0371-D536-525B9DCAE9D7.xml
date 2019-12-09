@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="DB_UPGRADE_LOGS" directorySegmentName="seg_0" id="9CE3D281-160A-0371-D536-525B9DCAE9D7">
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2019-12-09 17:33:50 UTC</createdTime>
+<ownerDesignName>DB_version_control</ownerDesignName>
+<schemaObject>D8FEF541-E6C2-96B9-819E-486D0F99D68E</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>6A05D2DC-A7D3-C879-4667-FD3905051AD8</segment>
+<tableSpace>72D5D026-6C5C-E494-98F9-2F4419EFBDB7</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="UPGRADE_DESC" id="000C3183-F1D5-6339-DADD-9850A09EF77A">
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2019-12-09 17:33:51 UTC</createdTime>
+<ownerDesignName>DB_version_control</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="UPGRADE_LOG_ID" id="3ACE19F6-DF3E-E248-F810-A7869E8CAB72">
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2019-12-09 17:33:51 UTC</createdTime>
+<ownerDesignName>DB_version_control</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="UPGRADE_DATE" id="6FD3CB69-3721-8E72-6E79-5323CD023986">
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2019-12-09 17:33:51 UTC</createdTime>
+<ownerDesignName>DB_version_control</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="UPGRADE_VERSION" id="76096F95-8750-6C11-B041-40BFEE976AC0">
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2019-12-09 17:33:51 UTC</createdTime>
+<ownerDesignName>DB_version_control</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="UPGRADE_APP_DATE" id="7B2B2AB1-68EE-2517-62C7-40A5494EAC67">
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2019-12-09 17:33:51 UTC</createdTime>
+<ownerDesignName>DB_version_control</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="UPGRADE_BY" id="7C6F83B2-D07B-5939-B3E7-3B4833EA5D26">
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2019-12-09 17:33:51 UTC</createdTime>
+<ownerDesignName>DB_version_control</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="UPGRADE_APP_NAME" id="7CEFB869-23DD-293C-9C3D-89ACBDACFC40">
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2019-12-09 17:33:51 UTC</createdTime>
+<ownerDesignName>DB_version_control</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="DB_UPGRADE_LOGS_PK" id="0AD5B946-DB5F-1997-9931-A70292871DDD">
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2019-12-09 17:33:52 UTC</createdTime>
+<ownerDesignName>DB_version_control</ownerDesignName>
+<schemaObject>D8FEF541-E6C2-96B9-819E-486D0F99D68E</schemaObject>
+<segment>E0FBE7E5-DF66-DD7A-938D-7A91A4BF7328</segment>
+<tableSpace>72D5D026-6C5C-E494-98F9-2F4419EFBDB7</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="DB_UPGRADE_LOGS_U1" id="C8E6BD95-0F08-986D-67B7-1A40671E04B9">
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2019-12-09 17:33:52 UTC</createdTime>
+<ownerDesignName>DB_version_control</ownerDesignName>
+<schemaObject>D8FEF541-E6C2-96B9-819E-486D0F99D68E</schemaObject>
+<segment>E0FBE7E5-DF66-DD7A-938D-7A91A4BF7328</segment>
+<tableSpace>72D5D026-6C5C-E494-98F9-2F4419EFBDB7</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="DB_UPGRADE_LOGS_PK" id="FF98C53B-EC73-2223-CC60-9B3C84BE1738">
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2019-12-09 17:33:53 UTC</createdTime>
+<ownerDesignName>DB_version_control</ownerDesignName>
+<segment>E0FBE7E5-DF66-DD7A-938D-7A91A4BF7328</segment>
+<tableSpace>72D5D026-6C5C-E494-98F9-2F4419EFBDB7</tableSpace>
+<existingIndex>0AD5B946-DB5F-1997-9931-A70292871DDD</existingIndex>
+<indexSegment>E0FBE7E5-DF66-DD7A-938D-7A91A4BF7328</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="DB_UPGRADE_LOGS_U1" id="F68414D2-BF0C-EB08-E9B1-24A9AD7B41D7">
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2019-12-09 17:33:53 UTC</createdTime>
+<ownerDesignName>DB_version_control</ownerDesignName>
+<segment>E0FBE7E5-DF66-DD7A-938D-7A91A4BF7328</segment>
+<tableSpace>72D5D026-6C5C-E494-98F9-2F4419EFBDB7</tableSpace>
+<existingIndex>C8E6BD95-0F08-986D-67B7-1A40671E04B9</existingIndex>
+<indexSegment>E0FBE7E5-DF66-DD7A-938D-7A91A4BF7328</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

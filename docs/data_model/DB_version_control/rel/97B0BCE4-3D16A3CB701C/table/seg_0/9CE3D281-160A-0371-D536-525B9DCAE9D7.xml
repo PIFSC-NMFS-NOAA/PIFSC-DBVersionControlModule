@@ -1,0 +1,178 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9CE3D281-160A-0371-D536-525B9DCAE9D7" schemaObject="D8FEF541-E6C2-96B9-819E-486D0F99D68E" name="DB_UPGRADE_LOGS">
+<sourceConnName>PIC_PICDM</sourceConnName>
+<sourceObjSchema>PICDM</sourceObjSchema>
+<sourceObjName>DB_UPGRADE_LOGS</sourceObjName>
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2019-12-09 17:33:50 UTC</createdTime>
+<commentInRDBMS>Database Upgrade Log&lt;br/&gt;&lt;br/&gt;This database table stores the upgrade history for a given database instance so it is clear what each database instance&apos;s version is.  This is used to apply the necessary database upgrades in order to deploy a given version of an associated application.</commentInRDBMS>
+<ownerDesignName>DB_version_control</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="UPGRADE_LOG_ID" id="3ACE19F6-DF3E-E248-F810-A7869E8CAB72">
+<sourceConnName>PIC_PICDM</sourceConnName>
+<sourceObjSchema>DB_UPGRADE_LOGS</sourceObjSchema>
+<sourceObjName>UPGRADE_LOG_ID</sourceObjName>
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2019-12-09 17:33:51 UTC</createdTime>
+<commentInRDBMS>Primary Key for the DB_UPGRADE_LOGS table</commentInRDBMS>
+<ownerDesignName>DB_version_control</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UPGRADE_APP_NAME" id="7CEFB869-23DD-293C-9C3D-89ACBDACFC40">
+<sourceConnName>PIC_PICDM</sourceConnName>
+<sourceObjSchema>DB_UPGRADE_LOGS</sourceObjSchema>
+<sourceObjName>UPGRADE_APP_NAME</sourceObjName>
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2019-12-09 17:33:51 UTC</createdTime>
+<commentInRDBMS>The name of the database/database module that was upgraded</commentInRDBMS>
+<ownerDesignName>DB_version_control</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UPGRADE_VERSION" id="76096F95-8750-6C11-B041-40BFEE976AC0">
+<sourceConnName>PIC_PICDM</sourceConnName>
+<sourceObjSchema>DB_UPGRADE_LOGS</sourceObjSchema>
+<sourceObjName>UPGRADE_VERSION</sourceObjName>
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2019-12-09 17:33:51 UTC</createdTime>
+<commentInRDBMS>The numeric version of the database upgrade that was applied</commentInRDBMS>
+<ownerDesignName>DB_version_control</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UPGRADE_DATE" id="6FD3CB69-3721-8E72-6E79-5323CD023986">
+<sourceConnName>PIC_PICDM</sourceConnName>
+<sourceObjSchema>DB_UPGRADE_LOGS</sourceObjSchema>
+<sourceObjName>UPGRADE_DATE</sourceObjName>
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2019-12-09 17:33:51 UTC</createdTime>
+<commentInRDBMS>The date/time that the upgrade was released</commentInRDBMS>
+<ownerDesignName>DB_version_control</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UPGRADE_APP_DATE" id="7B2B2AB1-68EE-2517-62C7-40A5494EAC67">
+<sourceConnName>PIC_PICDM</sourceConnName>
+<sourceObjSchema>DB_UPGRADE_LOGS</sourceObjSchema>
+<sourceObjName>UPGRADE_APP_DATE</sourceObjName>
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2019-12-09 17:33:51 UTC</createdTime>
+<commentInRDBMS>The date/time when the upgrade was applied to the database</commentInRDBMS>
+<ownerDesignName>DB_version_control</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UPGRADE_DESC" id="000C3183-F1D5-6339-DADD-9850A09EF77A">
+<sourceConnName>PIC_PICDM</sourceConnName>
+<sourceObjSchema>DB_UPGRADE_LOGS</sourceObjSchema>
+<sourceObjName>UPGRADE_DESC</sourceObjName>
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2019-12-09 17:33:51 UTC</createdTime>
+<commentInRDBMS>Description of the given database upgrade</commentInRDBMS>
+<ownerDesignName>DB_version_control</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000 BYTE</dataTypeSize>
+<ownDataTypeParameters>2000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UPGRADE_BY" id="7C6F83B2-D07B-5939-B3E7-3B4833EA5D26">
+<sourceConnName>PIC_PICDM</sourceConnName>
+<sourceObjSchema>DB_UPGRADE_LOGS</sourceObjSchema>
+<sourceObjName>UPGRADE_BY</sourceObjName>
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2019-12-09 17:33:51 UTC</createdTime>
+<commentInRDBMS>The Oracle username of the account that applied the upgrade to the database</commentInRDBMS>
+<ownerDesignName>DB_version_control</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FF98C53B-EC73-2223-CC60-9B3C84BE1738" name="DB_UPGRADE_LOGS_PK">
+<sourceConnName>PIC_PICDM</sourceConnName>
+<sourceObjSchema>PICDM</sourceObjSchema>
+<sourceObjName>DB_UPGRADE_LOGS_PK</sourceObjName>
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2019-12-09 17:33:53 UTC</createdTime>
+<ownerDesignName>DB_version_control</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3ACE19F6-DF3E-E248-F810-A7869E8CAB72"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F68414D2-BF0C-EB08-E9B1-24A9AD7B41D7" name="DB_UPGRADE_LOGS_U1">
+<sourceConnName>PIC_PICDM</sourceConnName>
+<sourceObjSchema>PICDM</sourceObjSchema>
+<sourceObjName>DB_UPGRADE_LOGS_U1</sourceObjName>
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2019-12-09 17:33:53 UTC</createdTime>
+<ownerDesignName>DB_version_control</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7CEFB869-23DD-293C-9C3D-89ACBDACFC40"/>
+<colUsage columnID="76096F95-8750-6C11-B041-40BFEE976AC0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0AD5B946-DB5F-1997-9931-A70292871DDD" schemaObject="D8FEF541-E6C2-96B9-819E-486D0F99D68E" name="DB_UPGRADE_LOGS_PK">
+<sourceConnName>PIC_PICDM</sourceConnName>
+<sourceObjSchema>PICDM</sourceObjSchema>
+<sourceObjName>DB_UPGRADE_LOGS_PK</sourceObjName>
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2019-12-09 17:33:52 UTC</createdTime>
+<ownerDesignName>DB_version_control</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3ACE19F6-DF3E-E248-F810-A7869E8CAB72"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C8E6BD95-0F08-986D-67B7-1A40671E04B9" schemaObject="D8FEF541-E6C2-96B9-819E-486D0F99D68E" name="DB_UPGRADE_LOGS_U1">
+<sourceConnName>PIC_PICDM</sourceConnName>
+<sourceObjSchema>PICDM</sourceObjSchema>
+<sourceObjName>DB_UPGRADE_LOGS_U1</sourceObjName>
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2019-12-09 17:33:52 UTC</createdTime>
+<ownerDesignName>DB_version_control</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7CEFB869-23DD-293C-9C3D-89ACBDACFC40"/>
+<colUsage columnID="76096F95-8750-6C11-B041-40BFEE976AC0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

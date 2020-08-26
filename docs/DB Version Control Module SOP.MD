@@ -2,7 +2,7 @@
 # Database Version Control Module SOP
 
 ## Overview:
-There is a need to store the upgrade history for a given database instance so it can be safely and easily upgraded when a given version of an application or module is deployed.  This Database Version Control Module (VCM) will serve to inform data staff of which database module version is installed on a given database instance and when each database module upgrade was applied to the instance.  This module is used to apply the necessary database upgrades in the correct order to deploy a given database module version for an associated application/module.
+The Database Version Control Module (VCM) was developed to provide a safe and easy way to install and upgrade database modules deployed on a given Oracle database instance.  The VCM provides information on which database module versions were installed and when they were installed on a database instance.  This module is used to apply the necessary database upgrades in the correct order to upgrade a given database module to a desired version.
 
 ## Resources:
 - [VCM Documentation](./DB%20Version%20Control%20Module%20Documentation.MD)

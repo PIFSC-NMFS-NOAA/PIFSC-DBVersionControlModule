@@ -1,5 +1,6 @@
 # Database Version Control Module Documentation
 ## Overview:
+The Database Version Control Module (VCM) was developed to provide a safe and easy way to install and upgrade database modules deployed on a given Oracle database instance.  The VCM provides information on which database module versions were installed and when they were installed on a database instance.  This module is used to apply the necessary database upgrades in the correct order to upgrade a given database module to a desired version.
 
 ## Resources:
 - Version Control Information:

@@ -62,6 +62,6 @@ The Database Version Control Module (VCM) was developed to provide a safe and ea
   - (Git only) When installing/upgrading an external DB module tag the revision with a standard DB module version tag to indicate the version of each of the external DB modules that were installed or upgraded to in the given code commit according to the version control template.
     - (Git only) Define a tag message for the highest version each external DB module that was installed/upgraded according to the version control template.  For example if versions 0.1, 0.2, and 0.3 of a given external module are installed then tag the repository with only the version 0.3 tag 
 
-## <a name="figure1"></a> Figure 1: Standard DB Version Control Module folder structure
+## <a name="figure1"></a> Figure 1: Standard DB Version Control Module folder structure ([original image](https://docs.google.com/drawings/d/1q_SfwJO3BHh_hfBUt2XARc7llEhGp8gMoFipYbOLtqM/edit?usp=sharing))
 
 ![Standard DB Version Control Module folder structure](./DB%20Version%20Control%20Directory%20Structure.png)

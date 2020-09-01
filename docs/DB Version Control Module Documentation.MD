@@ -12,8 +12,9 @@ The Database Version Control Module (VCM) was developed to provide a safe and ea
 - [Installing or Upgrading the DB Version Control Module](./Installing%20or%20Upgrading%20the%20DB%20Version%20Control%20Module.MD)
 - Documentation Template:
   - This Database Installation/Upgrade template is provided so a given module that has had the Database Version Control Module installed can change the [placeholders](./placeholder_documentation.MD) (defined in enclosing brackets) and reference that document in the main technical document for the module.
-    - [Markdown Format](./Template%20-%20Installing%20or%20Upgrading%20the%20Database.MD)
-Database Design:  
+    - [Installing or Upgrading the Database Documentation Template](./Template%20-%20Installing%20or%20Upgrading%20the%20Database.MD)
+
+## Database Design:  
 - Oracle Tables:
   - Each time a database upgrade is applied it will insert a record into the DB_UPGRADE_LOGS table that defines the numeric version and application/module name that was applied
 - Oracle Views:

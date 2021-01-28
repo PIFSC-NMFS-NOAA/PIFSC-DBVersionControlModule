@@ -15,9 +15,6 @@ The Database Version Control Module (VCM) was developed to provide a safe and ea
 ## Version Control Platform
 - Git
 
-## Authors
-- Jesse Abdul - Initial work
-
 ## License
 This project is licensed under the Apache-2.0 - see the [LICENSE.MD](./LICENSE.MD) for details
 

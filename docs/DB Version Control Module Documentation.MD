@@ -1,12 +1,13 @@
 # Database Version Control Module Documentation
+
 ## Overview:
 The Database Version Control Module (VCM) was developed to provide a safe and easy way to install and upgrade database modules deployed on a given Oracle database instance.  The VCM provides information on which database module versions were installed and when they were installed on a database instance.  This module is used to apply the necessary database upgrades in the correct order to upgrade a given database module to a desired version.
 
 ## Resources:
 - Version Control Information:
-  - URL: git@gitlab.pifsc.gov:centralized-data-tools/database-version-control-module.git
+  - URL: git@github.com:PIFSC-NMFS-NOAA/Database-Version-Control-Module.git
   - Database: 0.2 (git tag: db_vers_ctrl_db_v0.2)
-  - Application: 0.13 (git tag: db_vers_ctrl_v0.13)
+  - Application: 0.15 (git tag: db_vers_ctrl_v0.15)
 - [VCM SOP](./DB%20Version%20Control%20Module%20SOP.MD)
 - [Database Naming Conventions](./DB%20Version%20Control%20Module%20DB%20Naming%20Conventions.MD)
 - [Installing or Upgrading the DB Version Control Module](./Installing%20or%20Upgrading%20the%20DB%20Version%20Control%20Module.MD)

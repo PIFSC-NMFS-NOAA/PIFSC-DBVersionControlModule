@@ -11,4 +11,4 @@
 --------------------------------------------------------
 
 --add each database upgrade file in sequential order here:
-@@"./upgrades/[DATABASE NAME]_DDL_DML_upgrade_v0.1.sql"
+@@upgrades/[DATABASE NAME]_DDL_DML_upgrade_v0.1.sql

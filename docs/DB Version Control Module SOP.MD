@@ -1,12 +1,12 @@
 # Database Version Control Module SOP
 
 ## Overview:
-The Database Version Control Module (VCM) was developed to provide a safe and easy way to install and upgrade database modules deployed on a given Oracle database instance.  The VCM provides information on which database module versions were installed and when they were installed on a database instance.  This module is used to apply the necessary database upgrades in the correct order to upgrade a given database module to a desired version.
+The Database Version Control Module (VCM) was developed to provide a safe and easy way to install and upgrade database modules deployed on a given Oracle database instance.  The VCM provides information on which database module versions were installed and when they were installed on a database instance.  This module is used to apply the necessary database upgrades in the correct order to upgrade a given database module to a desired version.  This module can also be used to develop and implement a database upgrade rollback plan.   
 
 ## Resources:
 - [VCM Documentation](./DB%20Version%20Control%20Module%20Documentation.MD)
 - [Template - Installing or Upgrading the Database](./Template%20-%20Installing%20or%20Upgrading%20the%20Database.MD)
-- Git Repository URL: git@github.com:PIFSC-NMFS-NOAA/PIFSC-DBVersionControlModule.git
+- [Database Upgrade and Rollback SOP](./Database%20Upgrade%20and%20Rollback%20SOP.md)
 
 ## Method:
 - (Defining DB Upgrades) All DDL and DML commands necessary to define the database structure and data (relevant reference data or application data but not any actual data that is being managed in the database) for a given database upgrade are saved as separate SQL files with standard headings.
@@ -22,7 +22,7 @@ The Database Version Control Module (VCM) was developed to provide a safe and ea
     - Copy the [Shared_SQL template](./repository_templates/shared_SQL) folder into the project repository directory
   - (Code Commit and DB Upgrade Templates) The SQL/shared_SQL "database root" directory contains a [DB_version_control_templates.txt](../SQL/DB_version_control_templates.txt) file that provides some standard templates for code commit messages and database upgrade file comments.  These can be modified to be project-specific so they can be easily copied and pasted into commit messages and database module upgrade files.  Each line in the template file that starts with "**" is informational and will not be actually added to the commit message or database upgrade files.  The first section (Code Commit Templates) contains templates for code commits and the second section (Database Upgrade Templates) contains templates for database upgrade files.  Placeholders (indicated by brackets) will be replaced with actual content as indicated in the informational content.  
     - **Note: For ease of use the database module upgrade template content has been included in the DDL/DML template files.
-  - (Automated database deployment script templates) The SQL/shared_SQL "database root" directory contains two automated deployment script templates.  These script can be easily modified to automate and log the deployment/upgrade to the test and production servers.  
+  - (Automated database deployment script templates) The SQL/shared_SQL "database root" directory contains two automated deployment script templates.  These script can be easily modified to automate and log the deployment/upgrade to the dev, test, and production servers.  
     - [deploy_dev.sql](./repository_templates/SQL/deploy_dev.sql) can be modified to automate the deployment of the latest version of the development database on an empty schema.
     - [upgrade_dev_v0.3_to_0.5.sql](./repository_templates/SQL/upgrade_dev_v0.3_to_0.5.sql) can be modified to automate the upgrade of an existing version of the database to a desired version of the database.
     - \*Note: [placeholder_documentation.MD](./placeholder_documentation.MD) provides guidance on how to change the placeholders in the automated database deployment script templates.
@@ -63,6 +63,15 @@ The Database Version Control Module (VCM) was developed to provide a safe and ea
     - (Git only) Define a tag message for the DB module upgrade according to the version control template.  
   - (Git only) When installing/upgrading an external DB module tag the revision with a standard DB module version tag to indicate the version of each of the external DB modules that were installed or upgraded to in the given code commit according to the version control template.
     - (Git only) Define a tag message for the highest version each external DB module that was installed/upgraded according to the version control template.  For example if versions 0.1, 0.2, and 0.3 of a given external module are installed then tag the repository with only the version 0.3 tag 
+- Production Database Upgrade/Rollback Plans
+  - New Deployments
+    - When deploying a new database and application to production servers for the first time the upgrade and rollback plans are simple:
+      - Upgrade:
+        - Deploy the desired version of the database to the production schema using the Combined DB Definition File
+      - Rollback:
+        - Drop all objects in the production database to revert the production schema to a blank schema
+  - Upgrade in Place  
+    - [Database Upgrade and Rollback SOP](./Database%20Upgrade%20and%20Rollback%20SOP.md)
 
 ## <a name="figure1"></a> Figure 1: Standard DB Version Control Module folder structure ([original image](https://docs.google.com/drawings/d/1q_SfwJO3BHh_hfBUt2XARc7llEhGp8gMoFipYbOLtqM/edit?usp=sharing))
 

@@ -8,7 +8,7 @@ X combined file can simply be a series of references to the upgrade files in seq
 _ explore using the DB version control module to track hotfixes (for small incremental updates that could be bundled into a single update at a later date)
 	_ propose that the incremental updates be saved in a single hotfix DDL/DML file with a different naming convention in the upgrades/hotfix folder or just in the upgrades folder that can be committed multiple times as the hotfixes are applied.  This can be versioned (maybe in a specific version hotfix branch) and then when it is merged into the master/production branch it could be converted into an actual standard database upgrade file
 
-
+_ update the UPGRADE_DESC to be a CLOB field (2000 characters is not always sufficient)
 
 X add in the external_modules folders as blank folders in the templates (README.txt in each one to explain the purpose)
 X implement automated database deployments using SQL*Plus

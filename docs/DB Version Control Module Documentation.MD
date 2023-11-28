@@ -6,7 +6,7 @@ The Database Version Control Module (VCM) was developed to provide a safe and ea
 ## Resources:
 - Version Control Information:
   - URL: git@github.com:PIFSC-NMFS-NOAA/PIFSC-DBVersionControlModule.git
-  - Database: 0.2 (git tag: [db_vers_ctrl_db_v0.2](https://github.com/PIFSC-NMFS-NOAA/PIFSC-DBVersionControlModule/releases/tag/db_vers_ctrl_db_v0.2))
+  - Database: 1.0 (git tag: [db_vers_ctrl_db_v1.0](https://github.com/PIFSC-NMFS-NOAA/PIFSC-DBVersionControlModule/releases/tag/db_vers_ctrl_db_v1.0))
   - Application: 1.0 (git tag: [db_vers_ctrl_v1.0](https://github.com/PIFSC-NMFS-NOAA/PIFSC-DBVersionControlModule/releases/tag/db_vers_ctrl_v1.0))
 - [VCM SOP](./DB%20Version%20Control%20Module%20SOP.MD)
 - [Database Naming Conventions](./DB%20Version%20Control%20Module%20DB%20Naming%20Conventions.MD)

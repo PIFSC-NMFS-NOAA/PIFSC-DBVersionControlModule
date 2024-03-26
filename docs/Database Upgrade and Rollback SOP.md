@@ -6,7 +6,7 @@ This document defines a standard procedure for developing an upgrade and rollbac
 ## Resources
 -   Version Control Information:
     -   URL: git@github.com:PIFSC-NMFS-NOAA/PIFSC-DBVersionControlModule.git
-    -   Version: 1.1 (Git tag: db_vers_upgrade_rollback_v1.1)
+    -   Version: 1.2 (Git tag: db_vers_upgrade_rollback_v1.2)
 -   [Database Version Control Module (VCM) SOP](./DB%20Version%20Control%20Module%20SOP.MD)
 -   [Automated App Deployments (AAD)](https://picgitlab.nmfs.local/centralized-data-tools/automated-app-deployments)
     -   [Automated APEX Deployment SOP](https://picgitlab.nmfs.local/centralized-data-tools/automated-app-deployments/-/blob/master/apex/automated_APEX_deployment_SOP.md)

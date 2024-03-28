@@ -6,6 +6,40 @@ X implement an undo log so that a given database module can be uninstalled safel
 	X when developing a rollback script for a given project include the corresponding external module rollback scripts to rollback the upgraded module versions
 
 
+version 1.0 testing:
+	X version 1.0:
+		X TEST_JDA_COMP: run SQL/deploy_dev.sql
+		X TEST_JDA: run version 0.1, 0.2, 1.0 upgrade files
+		X verified no invalid objects
+		X verified data models are equivalent
+	X Version 0.2:
+		X TEST_JDA_COMP: 
+			run SQL/deploy_dev.sql
+			run SQL/rollback/DB_version_control_DDL_DML_rollback_v1.0.sql
+		X TEST_JDA: run version 0.1, 0.2 upgrade files
+		X verified no invalid objects
+		X verified data models are equivalent
+	Version 0.1:
+		TEST_JDA_COMP: 
+			run SQL/deploy_dev.sql
+			run SQL/rollback/DB_version_control_DDL_DML_rollback_v1.0.sql
+			run SQL/rollback/DB_version_control_DDL_DML_rollback_v0.2.sql
+		TEST_JDA: run version 0.1 upgrade files
+		verified no invalid objects
+		verified data models are equivalent
+	Version 0.0:
+		TEST_JDA_COMP: 
+			run SQL/deploy_dev.sql
+			run SQL/rollback/DB_version_control_DDL_DML_rollback_v1.0.sql
+			run SQL/rollback/DB_version_control_DDL_DML_rollback_v0.2.sql
+			run SQL/rollback/DB_version_control_DDL_DML_rollback_v0.1.sql
+			confirmed schema has no objects
+	
+	
+
+
+_ update documentation to cite LCE project as examples of integrating rollback and upgrade files (version 1.2 of upgrade and rollback scripts and the version 1.2 upgrade and rollback plans)
+
 X combined file can simply be a series of references to the upgrade files in sequential order
 	X check if a relative path can be used so that the absolute path does not need to be defined
 

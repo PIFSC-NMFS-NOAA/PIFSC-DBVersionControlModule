@@ -33,8 +33,8 @@ SET DEFINE OFF
 SHOW USER;
 
 PROMPT running DDL scripts to upgrade the database from 0.3 to 0.5
-@@[DB Name]_DDL_DML_upgrade_v0.4.sql
-@@[DB Name]_DDL_DML_upgrade_v0.5.sql
+@@upgrades/[DB Name]_DDL_DML_upgrade_v0.4.sql
+@@upgrades/[DB Name]_DDL_DML_upgrade_v0.5.sql
 
 
 DISCONNECT;

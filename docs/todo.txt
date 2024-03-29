@@ -7,33 +7,33 @@ X implement an undo log so that a given database module can be uninstalled safel
 
 
 version 1.0 testing:
-	X version 1.0:
-		X TEST_JDA_COMP: run SQL/deploy_dev.sql
-		X TEST_JDA: run version 0.1, 0.2, 1.0 upgrade files
-		X verified no invalid objects
-		X verified data models are equivalent
-	X Version 0.2:
-		X TEST_JDA_COMP: 
+	XX version 1.0:
+		XX TEST_JDA_COMP: run SQL/deploy_dev.sql
+		XX TEST_JDA: run version 0.1, 0.2, 1.0 upgrade files
+		XX verified no invalid objects
+		XX verified data models are equivalent
+	XX Version 0.2:
+		XX TEST_JDA_COMP: 
 			run SQL/deploy_dev.sql
 			run SQL/rollback/DB_version_control_DDL_DML_rollback_v1.0.sql
-		X TEST_JDA: run version 0.1, 0.2 upgrade files
-		X verified no invalid objects
-		X verified data models are equivalent
-	Version 0.1:
-		TEST_JDA_COMP: 
-			run SQL/deploy_dev.sql
-			run SQL/rollback/DB_version_control_DDL_DML_rollback_v1.0.sql
-			run SQL/rollback/DB_version_control_DDL_DML_rollback_v0.2.sql
-		TEST_JDA: run version 0.1 upgrade files
-		verified no invalid objects
-		verified data models are equivalent
-	Version 0.0:
-		TEST_JDA_COMP: 
+		XX TEST_JDA: run version 0.1, 0.2 upgrade files
+		XX verified no invalid objects
+		XX verified data models are equivalent
+	XX Version 0.1:
+		XX TEST_JDA_COMP: 
+			XX run SQL/deploy_dev.sql
+			XX run SQL/rollback/DB_version_control_DDL_DML_rollback_v1.0.sql
+			XX run SQL/rollback/DB_version_control_DDL_DML_rollback_v0.2.sql
+		XX TEST_JDA: run version 0.1 upgrade files
+		XX verified no invalid objects
+		XX verified data models are equivalent
+	XX Version 0.0:
+		XX TEST_JDA_COMP: 
 			run SQL/deploy_dev.sql
 			run SQL/rollback/DB_version_control_DDL_DML_rollback_v1.0.sql
 			run SQL/rollback/DB_version_control_DDL_DML_rollback_v0.2.sql
 			run SQL/rollback/DB_version_control_DDL_DML_rollback_v0.1.sql
-			confirmed schema has no objects
+		XX confirmed TEST_JDA_COMP schema has no objects
 	
 	
 

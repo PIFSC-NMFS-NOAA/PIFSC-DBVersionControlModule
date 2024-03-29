@@ -33,8 +33,8 @@ SET DEFINE OFF
 SHOW USER;
 
 PROMPT running DDL scripts to upgrade the database from 0.3 to 0.5
-@@rollback/[DB Name]_DDL_DML_rollback_v0.5.sql
-@@rollback/[DB Name]_DDL_DML_rollback_v0.4.sql
+@rollback/[DB Name]_DDL_DML_rollback_v0.5.sql
+@rollback/[DB Name]_DDL_DML_rollback_v0.4.sql
 
 
 DISCONNECT;

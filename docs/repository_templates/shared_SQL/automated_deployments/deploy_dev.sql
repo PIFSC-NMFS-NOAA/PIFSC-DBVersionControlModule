@@ -32,13 +32,13 @@ SET DEFINE OFF
 SHOW USER;
 
 PROMPT running DDL scripts
-@@[DB Name]_combined_DDL_DML.sql
+@[DB Name]_combined_DDL_DML.sql
 
 PROMPT loading data
---@@LOAD_DATA.SQL
+--@LOAD_DATA.SQL
 
 PROMPT granting privileges
---@@PRIVILEGES.SQL
+--@PRIVILEGES.SQL
 
 
 DISCONNECT;

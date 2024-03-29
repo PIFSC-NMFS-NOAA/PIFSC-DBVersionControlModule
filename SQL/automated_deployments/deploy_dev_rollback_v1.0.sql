@@ -32,7 +32,7 @@ SET DEFINE OFF
 SHOW USER;
 
 PROMPT running DDL scripts
-@@rollback/DB_version_control_DDL_DML_rollback_v1.0.sql
+@rollback/DB_version_control_DDL_DML_rollback_v1.0.sql
 
 
 DISCONNECT;

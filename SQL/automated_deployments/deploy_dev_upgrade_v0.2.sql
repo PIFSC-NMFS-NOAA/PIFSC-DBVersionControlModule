@@ -32,7 +32,7 @@ SET DEFINE OFF
 SHOW USER;
 
 PROMPT running DDL scripts
-@@upgrades/DB_version_control_DDL_DML_upgrade_v0.2.sql
+@upgrades/DB_version_control_DDL_DML_upgrade_v0.2.sql
 
 
 DISCONNECT;

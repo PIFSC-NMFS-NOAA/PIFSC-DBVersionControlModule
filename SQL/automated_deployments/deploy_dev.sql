@@ -32,7 +32,7 @@ SET DEFINE OFF
 SHOW USER;
 
 PROMPT running DDL scripts
-@@DB_version_control_combined_DDL_DML.sql
+@DB_version_control_combined_DDL_DML.sql
 
 PROMPT loading data
 --@@LOAD_DATA.SQL

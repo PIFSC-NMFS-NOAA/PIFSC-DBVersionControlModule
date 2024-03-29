@@ -15,7 +15,7 @@ The Database Version Control Module (VCM) was developed to provide a safe and ea
     - [Installing or Upgrading the Database Documentation Template](./Template%20-%20Installing%20or%20Upgrading%20the%20Database.MD)
 - Repository Templates:
   - The [repository_templates](./repository_templates) folder contains two folders for shared databases (shared_SQL) and dedicated databases (SQL).  The appropriate folder should be used for a given project.  
-  - The deployment scripts (e.g. [deploy_dev.sql](./repository_templates/SQL/deploy_dev.sql)) are provided to streamline the process of automating the deployment of the database.
+  - The deployment scripts (e.g. [deploy_dev.sql](./repository_templates/SQL/automated_deployments/deploy_dev.sql)) are provided to streamline the process of automating the deployment of the database.
 
 ## Database Design:  
 - Oracle Tables:

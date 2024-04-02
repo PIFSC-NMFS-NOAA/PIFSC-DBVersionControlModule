@@ -13,3 +13,4 @@
 --add each database upgrade file in sequential order here:
 @@upgrades/DB_version_control_DDL_DML_upgrade_v0.1.sql
 @@upgrades/DB_version_control_DDL_DML_upgrade_v0.2.sql
+@@upgrades/DB_version_control_DDL_DML_upgrade_v1.0.sql

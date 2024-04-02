@@ -23,3 +23,33 @@ The Database Version Control Module (VCM) was developed to provide a safe and ea
 - Oracle Views:
   - The DB_UPGRADE_LOGS_V view can be used to view the upgrade logs for a given database instance
 - **Note: detailed object/column comments are defined on each table and view database objects
+
+## DB Upgrade and Rollback Testing
+-   (using G:\security\DB\TEST_JDA\SQL\deploy_rollback_dev_VCM.sql):
+    -   version 1.0:
+        -   TEST_JDA_COMP: run SQL/deploy_dev.sql
+        -   TEST_JDA: run version 0.1, 0.2, 1.0 upgrade files
+        -   verified no invalid objects
+        -   verified data models are equivalent
+    -   Version 0.2:
+        -   TEST_JDA_COMP:
+            run SQL/deploy_dev.sql
+            run SQL/rollback/DB_version_control_DDL_DML_rollback_v1.0.sql
+        -   TEST_JDA: run version 0.1, 0.2 upgrade files
+        -   verified no invalid objects
+        -   verified data models are equivalent
+    -   Version 0.1:
+        -   TEST_JDA_COMP:
+            -   run SQL/deploy_dev.sql
+            -   run SQL/rollback/DB_version_control_DDL_DML_rollback_v1.0.sql
+            -   run SQL/rollback/DB_version_control_DDL_DML_rollback_v0.2.sql
+        -   TEST_JDA: run version 0.1 upgrade files
+        -   verified no invalid objects
+        -   verified data models are equivalent
+    -   Version 0.0:
+        -   TEST_JDA_COMP:
+            run SQL/deploy_dev.sql
+            run SQL/rollback/DB_version_control_DDL_DML_rollback_v1.0.sql
+            run SQL/rollback/DB_version_control_DDL_DML_rollback_v0.2.sql
+            run SQL/rollback/DB_version_control_DDL_DML_rollback_v0.1.sql
+        -   confirmed TEST_JDA_COMP schema has no objects

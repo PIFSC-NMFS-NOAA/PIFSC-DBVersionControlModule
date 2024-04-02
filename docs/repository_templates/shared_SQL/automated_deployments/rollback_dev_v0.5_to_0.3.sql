@@ -1,6 +1,6 @@
 /************************************************************************************
  Filename   : rollback_dev_v0.5_to_0.3.sql
- Author     : Jesse Abdul
+ Author     : 
  Purpose    : Rollback the development [DB Name] DB from version 0.5 to 0.3
  Description: The release included: an upgrade of the existing database
  Usage: Using Windows X open a command line window and change the directory to the [SQL Directory] directory in the working copy of the repository and execute the script using the "@" syntax.  When prompted enter the server credentials in the format defined in the corresponding code comments
